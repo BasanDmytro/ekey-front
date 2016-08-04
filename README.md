@@ -1,1 +1,1 @@
-# ekey-frontend
+# Front-end for E-Key project.
