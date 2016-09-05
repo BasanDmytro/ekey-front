@@ -98,7 +98,7 @@ function parallax() {
 		    var iOS = false,
 		        p = navigator.platform;
 		
-		    if (p === 'iPad' || p === 'iPhone' || p === 'iPod') {
+		    if (p === 'iPhone' || p === 'iPod') {
 		        iOS = true;
 		    }
 	
