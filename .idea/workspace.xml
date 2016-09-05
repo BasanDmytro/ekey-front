@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14aa98c5-cd45-43c7-829e-cf6141bf41e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
-    </list>
+    <list default="true" id="14aa98c5-cd45-43c7-829e-cf6141bf41e2" name="Default" comment="" />
     <ignored path="ekey-front.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -321,12 +318,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470303248394</updated>
       <workItem from="1470303250557" duration="658000" />
-      <workItem from="1472470288905" duration="10009000" />
+      <workItem from="1472470288905" duration="10055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10667000" />
+    <option name="totallyTimeSpent" value="10713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
