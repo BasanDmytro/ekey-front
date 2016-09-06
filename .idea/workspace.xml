@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14aa98c5-cd45-43c7-829e-cf6141bf41e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="14aa98c5-cd45-43c7-829e-cf6141bf41e2" name="Default" comment="" />
     <ignored path="ekey-front.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,13 +39,11 @@
             <state relative-caret-position="-7932">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1473164951000" expanded="true" signature="59:29373" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="1327:1442" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="1369:1442" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="29299:29316" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="29299:29334" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="29299:29347" ph="..." />
-                <marker date="1473164951000" expanded="true" signature="29299:29362" ph="..." />
+                <marker date="1473165181000" expanded="true" signature="59:29121" ph="..." />
+                <marker date="1473165181000" expanded="true" signature="29047:29064" ph="..." />
+                <marker date="1473165181000" expanded="true" signature="29047:29082" ph="..." />
+                <marker date="1473165181000" expanded="true" signature="29047:29095" ph="..." />
+                <marker date="1473165181000" expanded="true" signature="29047:29110" ph="..." />
               </folding>
             </state>
           </provider>
@@ -317,12 +312,12 @@
       <updated>1470303248394</updated>
       <workItem from="1470303250557" duration="658000" />
       <workItem from="1472470288905" duration="12525000" />
-      <workItem from="1473093159560" duration="2281000" />
+      <workItem from="1473093159560" duration="2494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15464000" />
+    <option name="totallyTimeSpent" value="15677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -563,13 +558,11 @@
         <state relative-caret-position="-7932">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1473164951000" expanded="true" signature="59:29373" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="1327:1442" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="1369:1442" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="29299:29316" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="29299:29334" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="29299:29347" ph="..." />
-            <marker date="1473164951000" expanded="true" signature="29299:29362" ph="..." />
+            <marker date="1473165181000" expanded="true" signature="59:29121" ph="..." />
+            <marker date="1473165181000" expanded="true" signature="29047:29064" ph="..." />
+            <marker date="1473165181000" expanded="true" signature="29047:29082" ph="..." />
+            <marker date="1473165181000" expanded="true" signature="29047:29095" ph="..." />
+            <marker date="1473165181000" expanded="true" signature="29047:29110" ph="..." />
           </folding>
         </state>
       </provider>
