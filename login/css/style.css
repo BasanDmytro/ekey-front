@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+  background-color: #4cae4c;
+}
 .wrapper {
   align-items: center;
   display: flex;
@@ -108,4 +111,15 @@
 .submit:hover .ease{
   width:100%;
   background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
