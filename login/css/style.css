@@ -160,6 +160,13 @@ input:focus, textarea:focus {
   background-repeat: no-repeat;
 }
 
+.forgotPassword {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  -webkit-text-fill-color: #30aed6;
+}
+
 @media only screen and (max-width: 580px) {
   #form-div{
     left: 3%;
