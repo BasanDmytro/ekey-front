@@ -5,6 +5,9 @@ $(document).ready(function() {
 	$('.payoff h1').addClass('visibility');
 	$('.features .col-md-4').addClass('visibility');
 	$('.social .col-md-12').addClass('visibility');
+
+	$('.navbar-default').css('display', 'block');
+	$('.navbar-default').addClass('fixed-to-top');
 });
 
 
@@ -19,13 +22,10 @@ $(window).scroll(function () {
 
 var scrollTop = $(window).scrollTop();
 
-	if (scrollTop > 200) {
+	if (scrollTop > 0) {
 		$('.navbar-default').css('display', 'block');
 		$('.navbar-default').addClass('fixed-to-top');
 			
-	} else if (scrollTop == 0)   {
-	
-		$('.navbar-default').removeClass('fixed-to-top');
 	}
 	
 	
