@@ -180,25 +180,26 @@ nav.navbar.fixed-to-top{
 .content {
     width: 60%;
     height:300px;
-    background:#cccccc;
+    background:#FFFFFF;
     float:left;
+    text-align: center;
 }
 .usr {
     width: 20%;
     height:300px;
 
-    background:#cccccc;
+    background:#FFFFFF;
     float:left;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .sideBar {
 
     width: 20%;
     height:300px;
-    background:#cccccc;
+    background:#FFFFFF;
     float:left;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 .foot {
     clear:both;
