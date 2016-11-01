@@ -26,7 +26,6 @@
                       <span class="icon-bar"></span>
                   </button>
 
-                  <!--Replace text with your app name or logo image-->
                   <a class="navbar-brand" href="#">E-Key</a>
 
               </div>
@@ -41,10 +40,7 @@
               </div>
           </div>
       </nav>
-
   </div>
-
-
 
   <div class="pages">
       <div class="usr">
@@ -56,125 +52,20 @@
           <p><output id = "university"></output></p>
           <p><output id = "faculty"></output></p>
           <p><output id = "group"></output></p>
-
       </div>
-
       <div class="content">
-          <table id="books">
-
-          </table>
-
-
+          <table id="books"></table>
       </div>
-
-
       <div class="sideBar">
           <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
       </div>
-
   </div>
-
-
-
-  <script>
-      var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":8068984287,"group":"pm-15-2","faculty":"Primat","university":"DNU","books":[{"bookId":1,"bookName":"Sbornik_zadach","authorName":"Demidovich","publYear":1987,"number":25988,"onlyHere":null,"dateFrom":1473368400000,"dateTo":1504904400000}]}';
-      var result = JSON.parse(tempJSON);
-      document.getElementById('firstName').value = "Имя: " + result.firstName;
-      document.getElementById('thirdName').value = "Отчество: " + result.thirdName;
-      document.getElementById('secondName').value = "Фамилия: " + result.secondName;
-      document.getElementById('phone').value = "Телефон: " + result.phoneNumb;
-      document.getElementById('idStudent').value = "Id: " + result.studentCardId;
-      document.getElementById('university').value = "Университет: " + result.university;
-      document.getElementById('faculty').value = "Факультет : " + result.faculty;
-      document.getElementById('group').value = "Группа: " + result.group;
-
-      var countBooks = result.books.length;
-
-      var newElem=document.getElementById('books');
-      newElem.setAttribute('width','auto');
-      newElem.setAttribute('border','1');
-      var newRow=newElem.insertRow(0);
-      var newCell = newRow.insertCell(0);
-      newCell.width="150";
-      newCell.innerHTML="<b>Название книги</b>";
-
-      var newCell = newRow.insertCell(1);
-      newCell.width="150";
-      newCell.innerHTML="<b>Автор</b>";
-
-      var newCell = newRow.insertCell(2);
-      newCell.width="150";
-      newCell.innerHTML="<b>Год публикации</b>";
-
-      var newCell = newRow.insertCell(3);
-      newCell.width="150";
-      newCell.innerHTML="<b>id книги</b>";
-
-      var newCell = newRow.insertCell(4);
-      newCell.width="150";
-      newCell.innerHTML="<b>Дата выдачи</b>";
-
-      var newCell = newRow.insertCell(5);
-      newCell.width="150";
-      newCell.innerHTML="<b>Дата возврата</b>";
-
-
-      for (var i = 1; i < countBooks + 1; i++) {
-          var newRow = newElem.insertRow(i);
-          var book = result.books[i - 1];
-
-
-          var newCell0 = newRow.insertCell(0);
-          newCell0.width = "150";
-          newCell0.innerHTML = book.bookName;
-
-          var newCell1 = newRow.insertCell(1);
-          newCell1.width = "150";
-          newCell1.innerHTML = book.authorName;
-
-          var newCell2 = newRow.insertCell(2);
-          newCell2.width = "150";
-          newCell2.innerHTML = book.publYear;
-
-
-          var newCell3 = newRow.insertCell(3);
-          newCell3.width = "150";
-          newCell3.innerHTML = book.number;
-
-
-          var dateFrom = new Date(book.dateFrom);
-          var newCell4 = newRow.insertCell(4);
-          newCell4.width = "150";
-          newCell4.innerHTML = dateFrom.getDay() + "." + dateFrom.getMonth() + "." + dateFrom.getFullYear();
-
-
-
-
-
-          var dateTo = new Date(book.dateTo);
-          var newCell5 = newRow.insertCell(5);
-          newCell5.width = "150";
-          newCell5.innerHTML = dateTo.getDay() + "." + dateTo.getMonth() + "." + dateTo.getFullYear();
-
-
-
-
-
-
-      }
-
-
-  </script>
-
-	 
-
-
-	 <!-- JAVASCRIPT
+  <!-- JAVASCRIPT
 	     ================================================== -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/animatescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/retina.min.js"></script>
-  	</body>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/retina.min.js"></script>
+  <script src="js/load.js"></script>
+
+  </body>
 </html>
