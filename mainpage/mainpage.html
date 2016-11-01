@@ -15,39 +15,77 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
       </head>
   <body>
-	  
-	  <!-- NAVBAR
-	      ================================================== -->
-	  <nav class="navbar navbar-default" role="navigation">
-	  	  <div class="container">
-			  <div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-			    
-			    <!--Replace text with your app name or logo image-->
-			    <a class="navbar-brand" href="#">E-Key</a>
-			    
-			  </div>
-			  <div class="collapse navbar-collapse navbar-ex1-collapse">
-			    <ul class="nav navbar-nav">
-			      <li><a onclick="$('header').animatescroll({padding:71});">About</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social</a></li>
-					<li><a onclick="$('.social').animatescroll({padding:71});">Sign in</a></li>
-					<li><a onclick="$('.social').animatescroll({padding:71});">Sign up</a></li>
-			    </ul>
-			  </div>
-		  </div>
-	  </nav>
-	  
-	  
+  <div class="header"></div>
+      <nav class="navbar navbar-default" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
 
-					
+                  <!--Replace text with your app name or logo image-->
+                  <a class="navbar-brand" href="#">E-Key</a>
+
+              </div>
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a onclick="$('header').animatescroll({padding:71});">About</a></li>
+                      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+                      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
+                      <li><a onclick="$('.social').animatescroll({padding:71});">Social</a></li>
+                      <li><a href="">Sign out</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+  </div>
+
+
+
+  <div class="pages">
+      <div class="usr">
+          <p><output id = "firstName"></output></p>
+          <p><output id = "thirdName"></output></p>
+          <p><output id = "secondName"></output></p>
+          <p><output id = "phone"></output></p>
+          <p><output id = "idStudent"></output></p>
+          <p><output id = "university"></output></p>
+          <p><output id = "faculty"></output></p>
+          <p><output id = "group"></output></p>
+
+      </div>
+
+      <div class="content">
+
+      </div>
+
+
+      <div class="sideBar">
+          <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
+      </div>
+
+  </div>
+
+
+
+  <script>
+      var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":null,"group":"null","faculty":"null","university":"null","books":null}';
+      var result = JSON.parse(tempJSON);
+
+      document.getElementById('firstName').value = "Имя: " + result.firstName;
+      document.getElementById('thirdName').value = "Отчество: " + result.thirdName;
+      document.getElementById('secondName').value = "Фамилия: " + result.secondName;
+      document.getElementById('phone').value = "Телефон: " + result.phoneNumb;
+      document.getElementById('idStudent').value = "Id: " + result.studentCardId;
+      document.getElementById('university').value = "Университет: " + result.university;
+      document.getElementById('faculty').value = "Факультет : " + result.faculty;
+      document.getElementById('group').value = "Группа: " + result.group;
+
+  </script>
 
 	 
 
