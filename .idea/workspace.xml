@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14aa98c5-cd45-43c7-829e-cf6141bf41e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/badge-appstore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/badge-appstore@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/dunes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/iphone-front.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/nepal.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/screenshots/app-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/screenshots/app-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/screenshots/app-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/sea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/img/status.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/landy-icons/icons-reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/landy-icons/landyicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/landy-icons/landyicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/landy-icons/landyicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainpage/landy-icons/landyicons.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landing_page/index.html" afterPath="$PROJECT_DIR$/landing_page/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage/css/style.css" afterPath="$PROJECT_DIR$/mainpage/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage/mainpage.html" afterPath="$PROJECT_DIR$/mainpage/mainpage.html" />
     </list>
@@ -43,21 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainpage/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainpage/mainpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="67" column="119" selection-start-line="67" selection-start-column="119" selection-end-line="67" selection-end-column="119" />
+            <state relative-caret-position="-12">
+              <caret line="123" column="41" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,8 +132,8 @@
         <option value="$PROJECT_DIR$/mainpage/js/load.js" />
         <option value="$PROJECT_DIR$/landing_page/index.html" />
         <option value="$PROJECT_DIR$/mainpage/index.html" />
-        <option value="$PROJECT_DIR$/mainpage/mainpage.html" />
         <option value="$PROJECT_DIR$/mainpage/css/style.css" />
+        <option value="$PROJECT_DIR$/mainpage/mainpage.html" />
       </list>
     </option>
   </component>
@@ -349,12 +343,12 @@
       <workItem from="1477470329920" duration="7579000" />
       <workItem from="1477643507900" duration="2659000" />
       <workItem from="1477685534995" duration="545000" />
-      <workItem from="1477993297986" duration="12285000" />
+      <workItem from="1477993297986" duration="18128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47954000" />
+    <option name="totallyTimeSpent" value="53797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="1280" height="725" extended-state="0" />
@@ -555,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -670,18 +657,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainpage/mainpage.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="67" column="119" selection-start-line="67" selection-start-column="119" selection-end-line="67" selection-end-column="119" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainpage/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainpage/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="123" column="41" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
           <folding />
         </state>
       </provider>
