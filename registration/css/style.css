@@ -167,6 +167,21 @@ html{
     background-repeat: no-repeat;
 }
 
+#id{
+    background-image: url(../images/id.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#id:focus{
+    background-image: url(../images/id.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+
 #university{
     background-size: 30px 30px;
     background-position: 11px 8px;
