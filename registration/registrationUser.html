@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  charset=UTF-8>
+    <title>Лабораторная работа №5</title>
+</head>
+<body>
+
+
+<div id="form-main">
+    <div id="form-div">
+        <form class="form" id="form1" action="" method="get" accept_charset="UTF-8">
+            <p class="name">
+                <input name="firstName" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" value="Дмитрий" placeholder="Имя" id="firstName" required>
+            </p>
+
+            <p class="name">
+                <input name="thirdName" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" value="Дмитрий" placeholder="Отчество" id="thirdName" required>
+            </p>
+
+            <p class="name">
+                <input name="secondName" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" value="Дмитрий" placeholder="Фамилия" id="secondName" required>
+            </p>
+
+            <p class="email">
+                <input name="email" type="email" class="feedback-input" id="email" placeholder="E-mail" value="basandima@gmail.com" required>
+            </p>
+
+            <p class="password">
+                <input name="password" type="password" class="feedback-input" id="password" placeholder="Пароль" value="Qwerty123" required>
+            </p>
+
+            <p class="phone">
+                <input name="phone" type="tel" class="feedback-input" id="phone" placeholder="Телефон" value="+380675651080" pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+            </p>
+
+            <p class="id">
+                <input name="id" type="number" class="feedback-input" id="id" placeholder="Id" placeholder="Id" required>
+            </p>
+
+            <p class="university">
+                <select name="university" class="feedback-input" required>
+                    <option value="DNU" selected>ДНУ</option>
+                    <option value="DIIT">ДИИТ</option>
+                </select>
+            </p>
+
+            <p class="role">
+                <select name="role" class="feedback-input" required>
+                    <option value="student" selected>Студент</option>
+                    <option value="librarian">Библиотекарь</option>
+                </select>
+            </p>
+
+            <p class="facultu">
+                <select name="faculty" class="feedback-input">
+
+                </select>
+            </p>
+
+            <p class="group">
+                <select name="group" class="feedback-input">
+
+                </select>
+            </p>
+
+            <p class="library">
+                <select name="library" class="feedback-input">
+
+                </select>
+            </p>
+
+
+
+
+            <div class="submit">
+                <input type="submit" value="SEND" id="button-blue" />
+                <div class="ease"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+
+<script src="js/load.js"></script>
+</html>
+
+
