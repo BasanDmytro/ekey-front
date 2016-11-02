@@ -10,13 +10,6 @@ $(document).ready(function() {
 	$('.navbar-default').addClass('fixed-to-top');
 });
 
-
-//iphone carousel animation
-$(window).load(function () {
-	$('header').addClass("animated fadeIn");
-	$('.carousel-iphone').addClass("animated fadeInLeft");
-});
-
 // Fixed navbar
 $(window).scroll(function () {
 
@@ -153,13 +146,5 @@ $(window).resize(function () {
 });	
 
 
-// iPhone Header Carousel
-$('header .carousel').carousel({
-  interval: 3000
-})
 
-// iPhone Features Carousel
-$('.detail .carousel').carousel({
-  interval: 4000
-})
 

@@ -8,7 +8,7 @@
 <body>
     <div id="form-main">
         <div id="form-div">
-            <form class="form" id="form" action="" method="post">
+            <form class="form" id="form" action="http://localhost:63342/ekey-front/mainpage/mainpage.html" method="post">
                 <p class="email">
                     <input type="email" id="email" name="email" placeholder="Input your email" class="feedback-input" required>
                 </p>
@@ -16,7 +16,7 @@
                     <input type="password" id="password" name="password" placeholder="Input your password" class="feedback-input" required>
                 </p>
                 <div class="submit">
-                    <input type="button" value="Log In" id="button">
+                    <input type="button" value="Log In" id="button" onclick=Redirect()>
                     <div class="ease"></div>
                 </div>
                 <p class="forgotPassword">
@@ -29,5 +29,11 @@
         </div>
     </div>
 </body>
-    <script src="js/login.js"></script>
+<script type="text/javascript">
+    <!--
+    function Redirect() {
+        window.location="http://localhost:63342/ekey-front/mainpage/mainpage.html";
+    }
+    //-->
+</script>
 </html>
