@@ -153,16 +153,19 @@
             }
             if (selectedRole == "student") {
                 for (var i = 0; i < universities[indexUniversity].faculties.length; i++) {
-                    addFaculties.options[i] = new Option(universities[indexUniversity].faculties[i].name, universities[indexUniversity].faculties[i].name);
+                    addFaculties.options[0] = new Option("Выберите факультет", "");
+                    addFaculties.options[0].selected = true;
+                    addFaculties.options[i + 1] = new Option(universities[indexUniversity].faculties[i].name, universities[indexUniversity].faculties[i].name);
                 }
             } else if (selectedRole == "librarian") {
-                for (var i = 0; i < universities[indexUniversity].faculties.length; i++) {
-                    addLibraries.options[i] = new Option(universities[indexUniversity].libraries[i].name, universities[indexUniversity].libraries[i].id);
+                for (var i = 0; i < universities[indexUniversity].libraries.length; i++) {
+                    addLibraries.options[0] = new Option("Выберите библиотеку", "");
+                    addLibraries.options[0].selected = true;
+                    addLibraries.options[i + 1] = new Option(universities[indexUniversity].libraries[i].name, universities[indexUniversity].libraries[i].id);
                 }
             }
-
-
     }
+
     function getGroups() {
         var selectedFaculty = document.form.faculty.value;
         var addGroups = document.form.group;
@@ -173,7 +176,9 @@
             }
         }
         for (var i = 0; i < universities[indexUniversity].faculties[indexFaculty].groups.length; i++) {
-            addGroups.options[i] = new Option(universities[indexUniversity].faculties[indexFaculty].groups[i].name, universities[indexUniversity].faculties[indexFaculty].groups[i].id);
+            addGroups.options[0] = new Option("Выберите группу", "");
+            addGroups.options[0].selected = true;
+            addGroups.options[i + 1] = new Option(universities[indexUniversity].faculties[indexFaculty].groups[i].name, universities[indexUniversity].faculties[indexFaculty].groups[i].id);
         }
     }
     function changeForm() {
@@ -186,10 +191,9 @@
             document.form.library.hidden = false;
             document.form.faculty.hidden = true;
             document.form.group.hidden = true;
-
         }
     }
-
+    
 
 </script>
 
