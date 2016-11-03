@@ -3,13 +3,10 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  charset=UTF-8>
-    <title>Лабораторная работа №5</title>
+    <title>Regestration</title>
 </head>
 <body>
 <script>
-    /**
-     * Created by admin on 02.11.16.
-     */
     var tempJSON = '[{"name":"DIIT","libraries":[{"libraryId":2,"name":"DIIT_main"}],"faculties":[{"name":"Fil_faq","groups":[{"groupId":7,"name":"ff-16-2"},{"groupId":8,"name":"ff-15-1"}]},{"name":"Ist_faq","groups":[{"groupId":9,"name":"if-16-1"},{"groupId":10,"name":"if-13-2"}]},{"name":"Fiz_tech","groups":[{"groupId":11,"name":"ft-14-1"},{"groupId":12,"name":"ft-13-2"}]}]},{"name":"DNU","libraries":[{"libraryId":1,"name":"DNU_main"}],"faculties":[{"name":"Fil_faq","groups":[{"groupId":1,"name":"ff-16-1"},{"groupId":2,"name":"ff-14-2"}]},{"name":"Ist_Faq","groups":[{"groupId":3,"name":"if-15-1"},{"groupId":4,"name":"if-16-2"}]},{"name":"Primat","groups":[{"groupId":5,"name":"pm-15-1"},{"groupId":6,"name":"pa-16-1"}]}]}]';
     var result = JSON.parse(tempJSON);
 
@@ -48,14 +45,28 @@
         }
         university.faculties = faculties;
         universities.push(university);
+
     }
 
-    
+  //  function getF() {
+
+
+        //    var newElem=document.getElementById('books');
+        //    newElem.setAttribute('width','auto');
+        //    newElem.setAttribute('border','1');
+        //    var newRow=newElem.insertRow(0);
+        //    var newCell = newRow.insertCell(0);
+        //    newCell.width="150";
+        //    newCell.innerHTML="<b>Название книги</b>";
+
+    //    }
+
+
 </script>
 
 <div id="form-main">
     <div id="form-div">
-        <form class="form" id="form1" action="" method="get" accept_charset="UTF-8">
+        <form class="form" id="form1" action="" method="get" accept_charset="UTF-8" name="form">
             <p class="name">
                 <input name="firstName" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Имя" id="firstName" required>
             </p>
@@ -84,22 +95,24 @@
                 <input name="id" type="number" class="feedback-input" id="id" placeholder="Id" required>
             </p>
 
-            <p class="university">
-                <select name="university" class="feedback-input" required>
-                    <option value="DNU" selected>ДНУ</option>
-                    <option value="DIIT">ДИИТ</option>
-                </select>
-            </p>
-
-            <p class="role">
+            <p class="role" onchange="changeForm()">
                 <select name="role" class="feedback-input" required>
-                    <option value="student" selected>Студент</option>
+                    <option value="" selected>Выберите роль пользователя</option>
+                    <option value="student">Студент</option>
                     <option value="librarian">Библиотекарь</option>
                 </select>
             </p>
 
-            <p class="facultu">
-                <select name="faculty" class="feedback-input">
+            <p class="university">
+                <select name="university" class="feedback-input" onchange="getFaculties()" required>
+                    <option value="" selected>Выберите университет</option>
+                    <option value="DNU">ДНУ</option>
+                    <option value="DIIT">ДИИТ</option>
+                </select>
+            </p>
+
+            <p class="faculty">
+                <select name="faculty" class="feedback-input" onchange="getGroups()">
 
                 </select>
             </p>
@@ -110,7 +123,7 @@
                 </select>
             </p>
 
-            <p class="library">
+            <p class="library" onchange="changeForm()">
                 <select name="library" class="feedback-input">
 
                 </select>
@@ -123,6 +136,62 @@
         </form>
     </div>
 </div>
+
+<script>
+    var indexUniversity = 0;
+    var indexFaculty = 0;
+    function getFaculties() {
+        var selectedUniversity = document.form.university.value;
+        var selectedRole = document.form.role.value;
+        var addFaculties = document.form.faculty;
+        var addLibraries = document.form.library;
+            for (var i = 0; i < universities.length; i++) {
+                if (universities[i].name == selectedUniversity) {
+                    indexUniversity = i;
+                    break;
+                }
+            }
+            if (selectedRole == "student") {
+                for (var i = 0; i < universities[indexUniversity].faculties.length; i++) {
+                    addFaculties.options[i] = new Option(universities[indexUniversity].faculties[i].name, universities[indexUniversity].faculties[i].name);
+                }
+            } else if (selectedRole == "librarian") {
+                for (var i = 0; i < universities[indexUniversity].faculties.length; i++) {
+                    addLibraries.options[i] = new Option(universities[indexUniversity].libraries[i].name, universities[indexUniversity].libraries[i].id);
+                }
+            }
+
+
+    }
+    function getGroups() {
+        var selectedFaculty = document.form.faculty.value;
+        var addGroups = document.form.group;
+        for (var i = 0; i < universities[indexUniversity].faculties.length; i++) {
+            if (universities[indexUniversity].faculties[i].name == selectedFaculty) {
+                indexFaculty = i;
+                break;
+            }
+        }
+        for (var i = 0; i < universities[indexUniversity].faculties[indexFaculty].groups.length; i++) {
+            addGroups.options[i] = new Option(universities[indexUniversity].faculties[indexFaculty].groups[i].name, universities[indexUniversity].faculties[indexFaculty].groups[i].id);
+        }
+    }
+    function changeForm() {
+        var selectedRole = document.form.role.value;
+        if (selectedRole == "student") {
+            document.form.library.hidden = true;
+            document.form.faculty.hidden = false;
+            document.form.group.hidden = false;
+        } else if (selectedRole == "librarian") {
+            document.form.library.hidden = false;
+            document.form.faculty.hidden = true;
+            document.form.group.hidden = true;
+
+        }
+    }
+
+
+</script>
 
 </body>
 
