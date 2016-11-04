@@ -168,14 +168,84 @@ html{
 }
 
 #id{
+     background-image: url(../images/id.png);
+     background-size: 30px 30px;
+     background-position: 11px 8px;
+     background-repeat: no-repeat;
+ }
+
+#id:focus{
     background-image: url(../images/id.png);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat;
 }
 
-#id:focus{
+#idBook{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#idBook:focus{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#nameBook{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#nameBook:focus{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#authorBook{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#authorBook:focus{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#yearBook{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#yearBook:focus{
+    background-image: url(../images/book.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#idLibrary{
     background-image: url(../images/id.png);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#idLibrary:focus{
+    background-image: url(../images/id.pngr);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat;
