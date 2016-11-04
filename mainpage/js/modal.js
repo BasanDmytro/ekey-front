@@ -43,6 +43,26 @@ $(document).ready(function(){
 });
 
 addEventListener('load', function(e) {
+
+    var date = new Date();
+    if (date.getDay() < 10) {
+        if (date.getMonth() < 10) {
+            var today = date.getFullYear() + "-" + "0" +date.getMonth() + "-" + "0" + date.getDay();
+        } else {
+            var today = date.getFullYear() + "-" + date.getMonth() + "-" + "0" + date.getDay();
+        }
+    }
     var idLibrary = document.getElementById('idLibrary');
-    idLibrary.value = user.library;
+    var idLibrary1 = document.getElementById('idLibrary1');
+    var setDateFrom = document.getElementById('dateFrom');
+    var setDateTo = document.getElementById('dateTo');
+    setDateFrom.value = today;
+    setDateFrom.readOnly = true;
+    setDateTo.value = today;
+    setDateTo.min = today;
+    if (user.library != null) {
+        idLibrary.value = user.library;
+        idLibrary1.value = user.library;
+    }
+
 }, false);
