@@ -17,6 +17,8 @@ user.library = result.library;
 
 if (user.role != "STUDENT") {   //довать или убрать кнопку добавить книгу(только для библиотекорей и админовв)
     document.getElementById('addBook1').style.display='none';
+    document.getElementById('addBookToUser1').style.display='none';
+    document.getElementById('addNewUser1').style.display='none';
 }
 
 document.getElementById('firstName').value = "Имя: " + user.firstName;
