@@ -3,14 +3,24 @@
  */
 var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":8068984287,"group":"pm-15-2","faculty":"Primat","university":"DNU","books":[{"bookId":1,"bookName":"Sbornik_zadach","authorName":"Demidovich","publYear":1987,"number":25988,"onlyHere":null,"dateFrom":1473368400000,"dateTo":1504904400000}]}';
 var result = JSON.parse(tempJSON);
-document.getElementById('firstName').value = "Имя: " + result.firstName;
-document.getElementById('thirdName').value = "Отчество: " + result.thirdName;
-document.getElementById('secondName').value = "Фамилия: " + result.secondName;
-document.getElementById('phone').value = "Телефон: " + result.phoneNumb;
-document.getElementById('idStudent').value = "Id: " + result.studentCardId;
-document.getElementById('university').value = "Университет: " + result.university;
-document.getElementById('faculty').value = "Факультет : " + result.faculty;
-document.getElementById('group').value = "Группа: " + result.group;
+var user = {};
+user.firstName = result.firstName;
+user.thirdName = result.thirdName;
+user.secondName = result.secondName;
+user.phoneNumb = result.phoneNumb;
+user.cardId = result.studentCardId;
+user.university = result.university;
+user.faculty = result.faculty;
+user.group = result.group;
+
+document.getElementById('firstName').value = "Имя: " + user.firstName;
+document.getElementById('thirdName').value = "Отчество: " + user.thirdName;
+document.getElementById('secondName').value = "Фамилия: " + user.secondName;
+document.getElementById('phone').value = "Телефон: " + user.phoneNumb;
+document.getElementById('idStudent').value = "Id: " + user.studentCardId;
+document.getElementById('university').value = "Университет: " + user.university;
+document.getElementById('faculty').value = "Факультет : " + user.faculty;
+document.getElementById('group').value = "Группа: " + user.group;
 
 var countBooks = result.books.length;
 
