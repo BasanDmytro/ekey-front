@@ -37,7 +37,7 @@
               </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav">
-                      <li> <center></center> <a href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Добавить книгу в базу</span><span class="submit"></span></a></li>
+                      <li id="addBook"> <a id="addBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit" id="addBooks">Добавить книгу в базу</span><span class="submit"></span></a></li>
                       <li><a href="http://localhost:63342/ekey-front/login/login.html">Sign out</a></li>
 
                   </ul>
@@ -59,19 +59,27 @@
       </div>
       <div class="content">
           <table id="books"></table>
-
           <div id="popup_contact" class="popup_block">
               <form id="form" action="/" method="post">
-                      <p class="first">
-                          <input type="text" name="name" id="name" size="30" />
-                      </p>
-                      <p>
-                          <input type="text" name="email" id="email" size="30" />
-                      </p>
-                      <p>
-                          <input type="text" name="web" id="web" size="30" />
-                      </p>
-                  <p class="submit"><button type="submit">Отправить</button></p>
+                  <p class="idBook">
+                      <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги"required>
+                  </p>
+                  <p class="nameBook">
+                      <input name="nameBook" id="nameBook" type="text" class="feedback-input" placeholder="Введите название книги" required>
+                  </p>
+                  <p class="authorBook">
+                      <input name="authorBook" id="authorBook" type="text" class="feedback-input" placeholder="Введите автора книги" required>
+                  </p>
+                  <p class="yearBook">
+                      <input name="yearBook" id="yearBook" type="number" class="feedback-input" placeholder="Введите год публикации книги" required>
+                  </p>
+                  <p class="idLibrary">
+                      <input name="idLibrary" id="idLibrary" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
+                  </p>
+                  <div class="submit">
+                      <input type="submit" value="SEND" id="button-blue" />
+                      <div class="ease"></div>
+                  </div>
               </form>
           </div>
       </div>
