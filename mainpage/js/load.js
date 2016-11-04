@@ -14,6 +14,10 @@ user.faculty = result.faculty;
 user.group = result.group;
 user.role = result.role;
 
+if (user.role == "STUDENT") {   //довать или убрать кнопку добавить книгу(только для библиотекорей и админовв)
+    document.getElementById('addBook1').style.display='none';
+}
+
 document.getElementById('firstName').value = "Имя: " + user.firstName;
 document.getElementById('thirdName').value = "Отчество: " + user.thirdName;
 document.getElementById('secondName').value = "Фамилия: " + user.secondName;
