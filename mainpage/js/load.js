@@ -12,6 +12,7 @@ user.cardId = result.studentCardId;
 user.university = result.university;
 user.faculty = result.faculty;
 user.group = result.group;
+user.role = result.role;
 
 document.getElementById('firstName').value = "Имя: " + user.firstName;
 document.getElementById('thirdName').value = "Отчество: " + user.thirdName;
