@@ -4,9 +4,13 @@
     <title>E-Key</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- CSS 
+    <!-- CSS
+
         ================================================== -->
     <!-- Bootstrap 3-->
+      <link href="css/demo-page.css" rel="stylesheet">
+      <!-- styles post -->
+      <link href="css/modal-contact.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -24,14 +28,18 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
+
                   </button>
 
                   <a class="navbar-brand" href="#">E-Key</a>
 
+
               </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav">
+                      <li> <center></center> <a href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Добавить книгу в базу</span><span class="submit"></span></a></li>
                       <li><a href="http://localhost:63342/ekey-front/login/login.html">Sign out</a></li>
+
                   </ul>
               </div>
           </div>
@@ -51,7 +59,23 @@
       </div>
       <div class="content">
           <table id="books"></table>
+
+          <div id="popup_contact" class="popup_block">
+              <form id="form" action="/" method="post">
+                      <p class="first">
+                          <input type="text" name="name" id="name" size="30" />
+                      </p>
+                      <p>
+                          <input type="text" name="email" id="email" size="30" />
+                      </p>
+                      <p>
+                          <input type="text" name="web" id="web" size="30" />
+                      </p>
+                  <p class="submit"><button type="submit">Отправить</button></p>
+              </form>
+          </div>
       </div>
+
       <div class="sideBar">
           <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
       </div>
@@ -62,6 +86,8 @@
   <script src="js/scripts.js"></script>
   <script src="js/retina.min.js"></script>
   <script src="js/load.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/modal.js"></script>
 
   </body>
 </html>
