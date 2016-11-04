@@ -30,14 +30,13 @@
                       <span class="icon-bar"></span>
 
                   </button>
-
                   <a class="navbar-brand" href="#">E-Key</a>
-
-
               </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav">
-                      <li id="addBook"> <a id="addBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit" id="addBooks">Добавить книгу в базу</span><span class="submit"></span></a></li>
+                      <li id="addNewUser"> <a target="_blank" id="addNewUser1" href="http://localhost:63342/ekey-front/registration/registrationUser.html" class="button poplight"><span class="submit" id="addBooks">Регистрация ногово пользователя</span><span class="submit"></span></a></li>
+                      <li id="addBookToUser"> <a id="addBookToUser1" href="#?w=500" rel="popup_contact1" class="button poplight"><span class="submit">Добавить книгу студенту</span><span class="submit"></span></a></li>
+                      <li id="addBook"> <a id="addBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Добавить книгу в базу</span><span class="submit"></span></a></li>
                       <li><a href="http://localhost:63342/ekey-front/login/login.html">Sign out</a></li>
 
                   </ul>
@@ -83,6 +82,32 @@
               </form>
           </div>
       </div>
+
+
+      <div id="popup_contact1" class="popup_block">
+          <form id="form1" action="/" method="post">
+              <p class="idLibrary">
+                  <input name="idLibrary1" id="idLibrary1" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
+              </p>
+              <p class="idStudent">
+                  <input name="id" id="id" type="number" class="feedback-input" placeholder="Введите id студента" required>
+              </p>
+              <p class="idBook">
+                  <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги" required>
+              </p>
+              <p class="dateFrom">
+                  <input name="dateFrom" id="dateFrom" type="date" class="feedback-input" placeholder="Дата выдачи книги" required>
+              </p>
+              <p class="dateTo">
+                  <input name="dateTo" id="dateTo" type="date" class="feedback-input" placeholder="Дата возврата книги" required>
+              </p>
+              <div class="submit">
+                  <input type="submit" value="SEND" id="button-blue" />
+                  <div class="ease"></div>
+              </div>
+          </form>
+      </div>
+  </div>
 
       <div class="sideBar">
           <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
