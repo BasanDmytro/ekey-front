@@ -13,8 +13,9 @@ user.university = result.university;
 user.faculty = result.faculty;
 user.group = result.group;
 user.role = result.role;
+user.library = result.library;
 
-if (user.role == "STUDENT") {   //довать или убрать кнопку добавить книгу(только для библиотекорей и админовв)
+if (user.role != "STUDENT") {   //довать или убрать кнопку добавить книгу(только для библиотекорей и админовв)
     document.getElementById('addBook1').style.display='none';
 }
 

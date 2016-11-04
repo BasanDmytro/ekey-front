@@ -1,7 +1,9 @@
 /**
  * Created by admin on 04.11.16.
  */
+
 $(document).ready(function(){
+
     //При нажатии на ссылку с классом poplight и href атрибута тега <a> с #
     $('a.poplight[href^=#]').click(function() {
         var popID = $(this).attr('rel'); //получаем имя окна, важно не забывать при добавлении новых менять имя в атрибуте rel ссылки
@@ -24,7 +26,6 @@ $(document).ready(function(){
             'margin-top' : -popMargTop,
             'margin-left' : -popMargLeft
         });
-
         //Добавляем полупрозрачный фон затемнения
         $('body').append('<div id="fade"></div>'); //div контейнер будет прописан перед тегом </body>.
         $('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //полупрозрачность слоя, фильтр для тупого IE
@@ -39,5 +40,9 @@ $(document).ready(function(){
         });
         return false;
     });
-
 });
+
+addEventListener('load', function(e) {
+    var idLibrary = document.getElementById('idLibrary');
+    idLibrary.value = user.library;
+}, false);
