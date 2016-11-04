@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add book to student</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id="form-main">
+    <div id="form-div">
+        <form class="form" id="formBook" action="" method="get" name="formBook">
+            <p class="idLibrary">
+                <input name="idLibrary" id="idLibrary" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
+            </p>
+            <p class="idStudent">
+                <input name="idStudent" id="idStudent" type="number" class="feedback-input" placeholder="Введите id студента" required>
+            </p>
+            <p class="idBook">
+                <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги" required>
+            </p>
+            <p class="dateFrom">
+                <input name="dateFrom" id="dateFrom" type="date" class="feedback-input" placeholder="Дата выдачи книги" required>
+            </p>
+            <p class="dateTo">
+                <input name="dateTo" id="dateTo" type="date" class="feedback-input" placeholder="Дата возврата книги" required>
+            </p>
+
+            <div class="submit">
+                <input type="submit" value="SEND" id="button-blue" />
+                <div class="ease"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
