@@ -47,9 +47,9 @@ addEventListener('load', function(e) {
     var date = new Date();
     if (date.getDay() < 10) {
         if (date.getMonth() < 10) {
-            var today = date.getFullYear() + "-" + "0" +date.getMonth() + "-" + "0" + date.getDay();
+            var today = date.getFullYear() + "-" + "0" + (date.getMonth() + 1) + "-" + "0" + (date.getDay() - 1);
         } else {
-            var today = date.getFullYear() + "-" + date.getMonth() + "-" + "0" + date.getDay();
+            var today = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + "0" + (date.getDay() - 1);
         }
     }
     var idLibrary = document.getElementById('idLibrary');
