@@ -4,6 +4,7 @@
 var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":8068984287,"group":"pm-15-2","faculty":"Primat","university":"DNU","books":[{"bookId":1,"bookName":"Sbornik_zadach","authorName":"Demidovich","publYear":1987,"number":25988,"onlyHere":null,"dateFrom":1473368400000,"dateTo":1504904400000}]}';
 var result = JSON.parse(tempJSON);
 var user = {};
+var idCard = null;
 user.firstName = result.firstName;
 user.thirdName = result.thirdName;
 user.secondName = result.secondName;
@@ -25,7 +26,7 @@ document.getElementById('firstName').value = "Имя: " + user.firstName;
 document.getElementById('thirdName').value = "Отчество: " + user.thirdName;
 document.getElementById('secondName').value = "Фамилия: " + user.secondName;
 document.getElementById('phone').value = "Телефон: " + user.phoneNumb;
-document.getElementById('idStudent').value = "Id: " + user.studentCardId;
+document.getElementById('idStudent').value = "Id: " + user.cardId;
 document.getElementById('university').value = "Университет: " + user.university;
 document.getElementById('faculty').value = "Факультет : " + user.faculty;
 document.getElementById('group').value = "Группа: " + user.group;
@@ -89,4 +90,16 @@ for (var i = 1; i < countBooks + 1; i++) {
     var newCell5 = newRow.insertCell(5);
     newCell5.width = "150";
     newCell5.innerHTML = dateTo.getDay() + "." + dateTo.getMonth() + "." + dateTo.getFullYear();
+}
+
+window.onload = function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost:1488/", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+            idCard = xhr.responseText;
+            alert( idCard);
+        }
+    }
+    xhr.send();
 }
