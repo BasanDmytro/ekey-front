@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <title>Log in</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal-contact.css">
+
 </head>
 <body>
+
     <div id="form-main">
         <div id="form-div">
             <form class="form" id="form" action="http://localhost:63342/ekey-front/mainpage/mainpage.html" method="post">
@@ -21,15 +24,29 @@
                 </div>
                 <p class="forgotPassword">
                     <div class="forgotPassword">
-                        <a><center>Forgot your password?</center></a>
+                <a id="FindBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Забыли пароль?</span><span class="submit"></span></a>
                     </div>
 
                 </p>
             </form>
         </div>
+        <div id="popup_contact" class="popup_block">
+            <form id="form2" action="/" method="post">
+                <p class="sendEmail">
+                    <input name="sendEmail" id="sendEmail" type="text" class="feedback-input" placeholder="Введите Вашу почту" required>
+                </p>
+                <div class="submit">
+                    <input type="submit" value="SEND" id="button" />
+                    <div class="ease"></div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
-<script type="text/javascript">
+<script src="js/jquery.js"></script>
+<script src="js/modal.js"></script>
+    <script type="text/javascript">
+
     <!--
     function Redirect() {
         window.location="http://localhost:63342/ekey-front/mainpage/mainpage.html";
