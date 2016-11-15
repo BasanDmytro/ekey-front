@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- Form for auth -->
     <div id="form-main">
         <div id="form-div">
-            <form class="form" id="form" action="http://localhost:63342/ekey-front/mainpage/mainpage.html" method="post">
+            <form class="form" id="form" action="/login" method="post">
                 <p class="email">
                     <input type="email" id="email" name="email" placeholder="Input your email" class="feedback-input" required>
                 </p>
@@ -19,6 +21,7 @@
                     <input type="button" value="Log In" id="button" onclick=Redirect()>
                     <div class="ease"></div>
                 </div>
+                <!-- Form for forgot password -->
                 <p class="forgotPassword">
                     <div class="forgotPassword">
                         <a><center>Forgot your password?</center></a>

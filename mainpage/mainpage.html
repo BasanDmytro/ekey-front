@@ -10,14 +10,17 @@
       <link href="css/demo-page.css" rel="stylesheet">
       <!-- styles post -->
       <link href="css/modal-contact.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <!-- Template Styles -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
-      </head>
+      <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
   <body>
+
+  <!-- Navigation bar
+    ======================================================= -->
   <div class="header"></div>
       <nav class="navbar navbar-default" role="navigation">
           <div class="container">
@@ -27,7 +30,6 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
-
                   </button>
                   <a class="navbar-brand" href="#">E-Key</a>
               </div>
@@ -44,6 +46,11 @@
       </nav>
   </div>
 
+
+  <!-- MainPage
+    ================================================ -->
+
+  <!-- Info about student -->
   <div class="pages">
       <div class="usr">
           <p><output id = "firstName"></output></p>
@@ -55,10 +62,13 @@
           <p><output id = "faculty"></output></p>
           <p><output id = "group"></output></p>
       </div>
+
+
       <div class="content">
+          <!-- Add book to DB -->
           <table id="books"></table>
           <div id="popup_contact" class="popup_block">
-              <form id="form" action="/" method="post" onload="getIdLibrary()">
+              <form id="form" action="/book/" method="post" onload="getIdLibrary()">
                   <p class="idBook">
                       <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги"required>
                   </p>
@@ -82,8 +92,9 @@
           </div>
       </div>
 
+      <!-- Books of student -->
       <div id="popup_contact1" class="popup_block">
-          <form id="form1" action="/" method="post">
+          <form id="form1" action="/book/give" method="post">
               <p class="idLibrary">
                   <input name="idLibrary1" id="idLibrary1" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
               </p>
@@ -106,6 +117,8 @@
           </form>
       </div>
   </div>
+
+    <!-- Flag of university -->
       <div class="sideBar">
           <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
       </div>
