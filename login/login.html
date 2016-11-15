@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <title>Log in</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal-contact.css">
+
 </head>
 <body>
 
+<<<<<<< HEAD
 <!-- Form for auth -->
+=======
+>>>>>>> 29dd8f9ef879552a6a8cfc683ede5a42db0793b8
     <div id="form-main">
         <div id="form-div">
             <form class="form" id="form" action="/login" method="post">
@@ -18,21 +23,34 @@
                     <input type="password" id="password" name="password" placeholder="Input your password" class="feedback-input" required>
                 </p>
                 <div class="submit">
-                    <input type="button" value="Log In" id="button" onclick=Redirect()>
+                    <input type="button" value="Log In" id="button2" onclick=Redirect()>
                     <div class="ease"></div>
                 </div>
                 <!-- Form for forgot password -->
                 <p class="forgotPassword">
                     <div class="forgotPassword">
-                        <a><center>Forgot your password?</center></a>
+                <a id="FindBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Забыли пароль?</span><span class="submit"></span></a>
                     </div>
-
                 </p>
+            </form>
+        </div>
+        <div id="popup_contact" class="popup_block">
+            <form id="form2" action="/" method="post">
+                <p class="sendEmail">
+                    <input name="sendEmail" id="sendEmail" type="text" class="feedback-input" placeholder="Введите Вашу почту" required>
+                </p>
+                <div class="submit">
+                    <input type="submit" value="SEND" id="button1" />
+                    <div class="ease"></div>
+                </div>
             </form>
         </div>
     </div>
 </body>
-<script type="text/javascript">
+<script src="js/jquery.js"></script>
+<script src="js/modal.js"></script>
+    <script type="text/javascript">
+
     <!--
     function Redirect() {
         window.location="http://localhost:63342/ekey-front/mainpage/mainpage.html";
