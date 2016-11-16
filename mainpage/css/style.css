@@ -178,16 +178,16 @@ nav.navbar.fixed-to-top{
 
 
 .content {
-    width: 60%;
-    height:300px;
+    width: 70%;
+    height:400px;
     background:#FFFFFF;
     float:left;
     text-align: center;
 
 }
 .usr {
-    width: 20%;
-    height:300px;
+    width: 15%;
+    height:400px;
 
     background:#FFFFFF;
     float:left;
@@ -196,8 +196,8 @@ nav.navbar.fixed-to-top{
 
 .sideBar {
 
-    width: 20%;
-    height:300px;
+    width: 15%;
+    height:400px;
     background:#FFFFFF;
     float:left;
     opacity: 0.7;
@@ -227,13 +227,6 @@ nav.navbar.fixed-to-top{
 .get-it{
 	padding: 100px 0px 160px 0px;
 	text-align: center;
-}
-
-.get-it button.app-store{
-	width: 152px;
-	height: 52px;
-	background: url(../img/badge-appstore.png) #373737 no-repeat 0px 5px;
-	color: white;
 }
 
 .get-it hr{
@@ -352,17 +345,13 @@ header, .social{
 	.purchase{
 		padding-top: 50px;
 	}
-	
-	.features col-md-4{
-		margin-bottom: 50px;
-	}
+
 	
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
     .purchasebutton.app-store, .get-it button.app-store{
-        background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
         background-size: 98%;
     	color: white;
     }
@@ -506,6 +495,48 @@ header, .social{
 	background-repeat: no-repeat;
 }
 
+#bookName{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#bookName:focus{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#bookYear{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#bookYear:focus{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#bookAuthor{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#bookAuthor:focus{
+	background-image: url(../images/book.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
 #yearBook{
 	background-image: url(../images/book.png);
 	background-size: 30px 30px;
@@ -528,6 +559,63 @@ header, .social{
 }
 
 #idLibrary:focus{
+	background-image: url(../images/id.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#idRFID{
+	background-image: url(../images/id.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#idRFID:focus{
+	background-image: url(../images/id.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#dateFrom{
+	background-image: url(../images/calendar.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#dateFrom:focus{
+	background-image: url(../images/calendar.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#dateTo{
+	background-image: url(../images/calendar.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#dateTo:focus{
+	background-image: url(../images/calendar.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+
+#idLibrary1{
+	background-image: url(../images/id.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#idLibrary1:focus{
 	background-image: url(../images/id.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
