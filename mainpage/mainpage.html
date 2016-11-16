@@ -7,7 +7,7 @@
     <!-- CSS
         ================================================== -->
     <!-- Bootstrap 3-->
-      <link href="css/demo-page.css" rel="stylesheet">
+
       <!-- styles post -->
       <link href="css/modal-contact.css" rel="stylesheet">
       <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -100,14 +100,14 @@
           </div>
       </div>
 
-      <!-- Books of student -->
+      <!-- Book to student -->
       <div id="popup_contact1" class="popup_block">
           <form id="form1" action="/book/give" method="post">
               <p class="idLibrary">
                   <input name="idLibrary1" id="idLibrary1" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
               </p>
               <p class="idStudent">
-                  <input name="id" id="id" type="number" class="feedback-input" placeholder="Введите id студента" required>
+                  <input name="id" id="idRFID" type="number" class="feedback-input" placeholder="Введите id студента" required>
               </p>
               <p class="idBook">
                   <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги" required>
@@ -155,11 +155,14 @@
 
   </div>
 
+
     <!-- Flag of university -->
       <div class="sideBar">
           <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
       </div>
   </div>
+
+
   <!-- JAVASCRIPT
 	     ================================================== -->
   <script src="js/jquery.js"></script>
