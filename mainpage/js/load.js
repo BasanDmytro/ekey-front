@@ -1,7 +1,7 @@
 /**
  * Created by admin on 01.11.16.
  */
-var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":8068984287,"group":"pm-15-2","faculty":"Primat","university":"DNU","books":[{"bookId":1,"bookName":"Sbornik_zadach","authorName":"Demidovich","publYear":1987,"number":25988,"onlyHere":null,"dateFrom":1473368400000,"dateTo":1504904400000}]}';
+var tempJSON = '{"firstName":"Vasya","secondName":"Pupkin","thirdName":"Ignatyevich","phoneNumb":569874123,"role":"STUDENT","library":"null","studentCardId":8068984287,"group":"pm-15-2","faculty":"Primat","university":"DNU","books":[{"bookId":1,"bookName":"Sbornik_zadach","authorName":"Demidovich I. V.","publYear":1987,"number":25988,"onlyHere":null,"dateFrom":1473368400000,"dateTo":1504904400000}]}';
 var result = JSON.parse(tempJSON);
 var user = {};
 var idCard = null;
@@ -55,9 +55,17 @@ newCell.innerHTML="<b>id книги</b>";
 
 var newCell = newRow.insertCell(4);
 newCell.width="150";
-newCell.innerHTML="<b>Дата выдачи</b>";
+newCell.innerHTML="<b>Количество страниц</b>";
 
 var newCell = newRow.insertCell(5);
+newCell.width="150";
+newCell.innerHTML="<b>Ключевые слова</b>";
+
+var newCell = newRow.insertCell(6);
+newCell.width="150";
+newCell.innerHTML="<b>Дата выдачи</b>";
+
+var newCell = newRow.insertCell(7);
 newCell.width="150";
 newCell.innerHTML="<b>Дата возврата</b>";
 
@@ -81,13 +89,21 @@ for (var i = 1; i < countBooks + 1; i++) {
     newCell3.width = "150";
     newCell3.innerHTML = book.number;
 
-    var dateFrom = new Date(book.dateFrom);
     var newCell4 = newRow.insertCell(4);
+    newCell4.width = "150";
+    newCell4.innerHTML = 300;
+
+    var newCell5 = newRow.insertCell(5);
+    newCell5.width = "150";
+    newCell5.innerHTML = "Math Demidovich Task";
+
+    var dateFrom = new Date(book.dateFrom);
+    var newCell4 = newRow.insertCell(6);
     newCell4.width = "150";
     newCell4.innerHTML = dateFrom.getDay() + "." + dateFrom.getMonth() + "." + dateFrom.getFullYear();
 
     var dateTo = new Date(book.dateTo);
-    var newCell5 = newRow.insertCell(5);
+    var newCell5 = newRow.insertCell(7);
     newCell5.width = "150";
     newCell5.innerHTML = dateTo.getDay() + "." + dateTo.getMonth() + "." + dateTo.getFullYear();
 }
@@ -99,6 +115,7 @@ window.onload = function() {
         if (xhr.readyState == 4) {
             idCard = xhr.responseText;
             alert( idCard);
+            document.getElementById('idRFID').value = idCard;
         }
     }
     xhr.send();
