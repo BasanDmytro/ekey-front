@@ -114,9 +114,26 @@ window.onload = function() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             idCard = xhr.responseText;
-            alert( idCard);
             document.getElementById('idRFID').value = idCard;
         }
-    }
+    };
     xhr.send();
+};
+
+function getID() {
+    alert("zaebza");
+    idCard = undefined;
+    while (idCard == undefined) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://localhost:1488/", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4) {
+                idCard = xhr.responseText;
+                alert( idCard);
+                document.getElementById('idRFID').value = idCard;
+            }
+        }
+        xhr.send();
+    }
+
 }

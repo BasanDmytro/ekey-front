@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress XmlDuplicatedId -->
 <html>
   <head>
     <title>E-Key</title>
@@ -38,21 +39,16 @@
                       <li id="addNewUser"> <a target="_blank" id="addNewUser1" href="http://localhost:63342/ekey-front/registration/registrationUser.html" class="button poplight"><span class="submit" id="addBooks">Регистрация</span><span class="submit"></span></a></li>
                       <li id="addBookToUser"> <a id="addBookToUser1" href="#?w=500" rel="popup_contact1" class="button poplight"><span class="submit">Добавить книгу студенту</span><span class="submit"></span></a></li>
                       <li id="addBook"> <a id="addBook1" href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Добавить книгу в базу</span><span class="submit"></span></a></li>
-                      <li id="FindBook"> <a id="FindBook" href="#?w=500" rel="popup_contact3" class="button poplight"><span class="submit">Найти книгу</span><span class="submit"></span></a></li>
-                      <li id="FindBook1"> <a id="FindBook1" href="#?w=500" rel="popup_contact2" class="button poplight"><span class="submit">Найти книги</span><span class="submit"></span></a></li>
+                      <li id="FindBook"> <a id="FindBook" href="#?w=500" rel="popup_contact3" class="button poplight"><span class="submit">Найти книги</span><span class="submit"></span></a></li>
+                      <li id="FindBook1"> <a id="FindBook1" href="#?w=500" rel="popup_contact2" class="button poplight"><span class="submit">Найти книгу</span><span class="submit"></span></a></li>
                       <li><a href="http://localhost:63342/ekey-front/login/login.html">Sign out</a></li>
 
                   </ul>
               </div>
           </div>
       </nav>
-  </div>
 
 
-  <!-- MainPage
-    ================================================ -->
-
-  <!-- Info about student -->
   <div class="pages">
       <div class="usr">
           <p><output id = "firstName"></output></p>
@@ -70,9 +66,9 @@
           <!-- Add book to DB -->
           <table id="books"></table>
           <div id="popup_contact" class="popup_block">
-              <form id="form" action="/book/" method="post" onload="getIdLibrary()">
+              <form id="form" action="http://localhost//book/" method="post" onload="getIdLibrary()">
                   <p class="idBook">
-                      <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги"required>
+                      <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги" required>
                   </p>
                   <p class="nameBook">
                       <input name="nameBook" id="nameBook" type="text" class="feedback-input" placeholder="Введите название книги" required>
@@ -102,12 +98,12 @@
 
       <!-- Book to student -->
       <div id="popup_contact1" class="popup_block">
-          <form id="form1" action="/book/give" method="post">
+          <form id="form1" action="http://localhost/book/give" method="post">
               <p class="idLibrary">
                   <input name="idLibrary1" id="idLibrary1" type="number" class="feedback-input" placeholder="Введите id библиотеки" required>
               </p>
               <p class="idStudent">
-                  <input name="id" id="idRFID" type="number" class="feedback-input" placeholder="Введите id студента" required>
+                  <input name="id" id="idRFID" type="text" class="feedback-input" placeholder="Введите id студента" required>
               </p>
               <p class="idBook">
                   <input name="idBook" id="idBook" type="text" class="feedback-input" placeholder="Введите id книги" required>
@@ -127,7 +123,7 @@
       <div id="popup_contact2" class="popup_block">
           <form id="form2" action="/" method="post">
               <p class="idBooks">
-                  <input name="idBooks" id="idBooks" type="number" class="feedback-input" placeholder="Введите id книг" required>
+                  <input name="idBooks" id="idBooks" type="number" class="feedback-input" placeholder="Введите id книги" required>
               </p>
               <div class="submit">
                   <input type="submit" value="SEND" id="button-blue" />
@@ -158,7 +154,7 @@
 
     <!-- Flag of university -->
       <div class="sideBar">
-          <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png"></center>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DNU_gerb.png/200px-DNU_gerb.png">
       </div>
   </div>
 
@@ -171,6 +167,5 @@
   <script src="js/load.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="js/modal.js"></script>
-
   </body>
 </html>
