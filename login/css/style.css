@@ -75,7 +75,7 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-#button{
+#button2 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   float:left;
   width: 100%;
@@ -93,7 +93,30 @@ input:focus, textarea:focus {
   font-weight:700;
 }
 
-#button:hover{
+#button2:hover{
+  background-color: rgba(0,0,0,0);
+  color: #0493bd;
+}
+
+#button1 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #3498db;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button1:hover{
   background-color: rgba(0,0,0,0);
   color: #0493bd;
 }
@@ -132,18 +155,32 @@ input:focus, textarea:focus {
   border:#30aed6 solid 3px;
 }
 
-#email{
+#email {
   background-image: url(../images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
-#email:focus{
+#email:focus {
   background-image: url(../images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
+}
+
+#sendEmail {
+    background-image: url(../images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#sendEmail:focus{
+    background-image: url(../images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
 }
 
 #password{
@@ -164,7 +201,7 @@ input:focus, textarea:focus {
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
-  -webkit-text-fill-color: #30aed6;
+  -webkit-text-fill-color: white;
 }
 
 @media only screen and (max-width: 580px) {
