@@ -17,7 +17,7 @@
         university.name = result[i].name;
 
         for (var j = 0; j < result[i].libraries.length; j++) {
-            var library = {}
+            var library = {};
             library.name = result[i].libraries[j].name;
             library.id = result[i].libraries[j].libraryId;
             libraries.push(library);
@@ -113,7 +113,7 @@
 <script>
     var indexUniversity = 0;
     var indexFaculty = 0;
-    function getFaculties() { // get all faculties
+    function getFaculties() {
         var selectedUniversity = document.form.university.value;
         var selectedRole = document.form.role.value;
         var addFaculties = document.form.faculty;
@@ -138,7 +138,6 @@
                 }
             }
     }
-
     function getGroups() { // get all groups
         var selectedFaculty = document.form.faculty.value;
         var addGroups = document.form.group;
@@ -166,8 +165,6 @@
             document.form.group.hidden = true;
         }
     }
-
-
 </script>
 
 </body>
