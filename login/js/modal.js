@@ -3,7 +3,6 @@
  */
 
 $(document).ready(function(){
-
     //При нажатии на ссылку с классом poplight и href атрибута тега <a> с #
     $('a.poplight[href^=#]').click(function() {
         var popID = $(this).attr('rel'); //получаем имя окна, важно не забывать при добавлении новых менять имя в атрибуте rel ссылки
@@ -43,7 +42,6 @@ $(document).ready(function(){
 });
 
 addEventListener('load', function(e) {
-
     var date = new Date();
     if (date.getDay() < 10) {
         if (date.getMonth() < 10) {
@@ -64,5 +62,4 @@ addEventListener('load', function(e) {
         idLibrary.value = user.library;
         idLibrary1.value = user.library;
     }
-
 }, false);
