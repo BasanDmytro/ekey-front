@@ -132,7 +132,7 @@ function getID() {
                 alert( idCard);
                 document.getElementById('idRFID').value = idCard;
             }
-        }
+        };
         xhr.send();
     }
 
