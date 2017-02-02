@@ -3,12 +3,38 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  charset=UTF-8>
-    <title>Regestration</title>
+    <title>Registration</title>
 </head>
 <body>
 <script>
-    var tempJSON = '[{"name":"DIIT","libraries":[{"libraryId":2,"name":"DIIT_main"}],"faculties":[{"name":"Fil_faq","groups":[{"groupId":7,"name":"ff-16-2"},{"groupId":8,"name":"ff-15-1"}]},{"name":"Ist_faq","groups":[{"groupId":9,"name":"if-16-1"},{"groupId":10,"name":"if-13-2"}]},{"name":"Fiz_tech","groups":[{"groupId":11,"name":"ft-14-1"},{"groupId":12,"name":"ft-13-2"}]}]},{"name":"DNU","libraries":[{"libraryId":1,"name":"DNU_main"}],"faculties":[{"name":"Fil_faq","groups":[{"groupId":1,"name":"ff-16-1"},{"groupId":2,"name":"ff-14-2"}]},{"name":"Ist_Faq","groups":[{"groupId":3,"name":"if-15-1"},{"groupId":4,"name":"if-16-2"}]},{"name":"Primat","groups":[{"groupId":5,"name":"pm-15-1"},{"groupId":6,"name":"pa-16-1"}]}]}]';
+
+    function some_function2(url, callback) {
+        var httpRequest;
+        if (window.XMLHttpRequest) {
+            httpRequest = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            httpRequest = new
+                ActiveXObject("Microsoft.XMLHTTP");
+        }
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+                callback.call(httpRequest.responseText);
+            }
+        };
+        httpRequest.open('GET', url);
+        httpRequest.send();
+    }
+
+    some_function2("http://localhost:9000/university/", function () {
+            var json = this;
+            localStorage.setItem('json', json);
+    });
+
+    tempJSON = localStorage.getItem("json");
+    localStorage.removeItem("json")
+
     var result = JSON.parse(tempJSON);
+
     var universities = [];
     for (var i = 0; i < result.length; i++) {
         var university = {};
@@ -45,7 +71,7 @@
 <!-- Form for registration -->
 <div id="form-main">
     <div id="form-div">
-        <form class="form" id="form1" action="/user" method="get" accept_charset="UTF-8" name="form">
+        <form class="form" id="form1" action="http://localhost:9000/user/" method="post" accept_charset="UTF-8" name="form">
             <p class="name">
                 <input name="firstName" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Имя" id="firstName" required>
             </p>
@@ -60,10 +86,6 @@
 
             <p class="email">
                 <input name="email" type="email" class="feedback-input" id="email" placeholder="E-mail" required>
-            </p>
-
-            <p class="password">
-                <input name="password" type="password" class="feedback-input" id="password" placeholder="Пароль" required>
             </p>
 
             <p class="phone">
@@ -103,7 +125,7 @@
             </p>
 
             <div class="submit">
-                <input type="submit" value="SEND" id="button-blue" />
+                <input type="submit" value="SEND" id="button-blue" onclick="avtorize()" />
                 <div class="ease"></div>
             </div>
         </form>
@@ -111,6 +133,14 @@
 </div>
 
 <script>
+    
+    function avtorize() {
+        window.location.href = "http://localhost:9000/"
+    }
+    
+    
+    
+    
     var indexUniversity = 0;
     var indexFaculty = 0;
     function getFaculties() {

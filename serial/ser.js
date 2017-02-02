@@ -21,9 +21,9 @@ serialPort.on("open", function () {
 app.get('/', function(req, res) {
     res.writeHead(200, {"Content-Type": "text/plain"});
     res.end(dataForOut);
-})
+});
 
 var server = app.listen(1488, function () {
-	var host = server.address().address
+	var host = server.address().address;
 	var port = server.address().port
-})
+});
